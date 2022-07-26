@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <h1 id="title">Random Survey Form</h1>
+    
+    <form id="survey-form">
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+      <div class="form-group">
+        <label id="name-label"> Enter your name:<input id="name" type="text" required placeholder="John Doe" class="form-control"/></label>
+      </div>
+
+      <div class="form-group">
+        <label id="email-label"> Enter your email:<input id="email" type="email" required placeholder="email@email.com" class="form-control"/></label>
+      </div>
+
+      <div class="form-group">
+        <label id="number-label"> Enter your age:<input id="number" type="number" min="13" max="120" placeholder="13-120" class="form-control"/></label>
+      </div>
+
+      <div class="form-group">
+        <label>How did you hear about us?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">LinkedIn</option>
+            <option value="2">Tweeter</option>
+            <option value="3">Instagram</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="form-group">
+          <p>Would you recommend us to a friend?</p>
+          <label><input class="inline" type="radio" name="recommend" value="definetly" checked/>Definetly</label>
+          <label><input class="inline" type="radio" name="recommend" value="maybe"/>Maybe</label>
+          <label><input class="inline" type="radio" name="recommend" value="notSure"/>Not sure</label>
+      </div>
+
+      <div class="form-group">
+          <p>What is your favorite dessert?</p>
+          <label><input class="inline" type="checkbox" name="dessert" value="chocolateChipCookies" />Chocolate chip cookies</label>
+          <label><input class="inline" type="checkbox" name="dessert" value="applePie" />Apple pie</label>
+          <label><input class="inline" type="checkbox" name="dessert" value="cheesecake" />Cheesecake</label>
+          <label><input class="inline" type="checkbox" name="dessert" value="carrotCake" />Carrot cake</label>
+          <label><input class="inline" type="checkbox" name="dessert" value="iceCream" />Ice cream</label>          
+      </div>
+
+      
+        <label>Would you like to add any comments?</label>     
+        <textarea placeholder="Add comments here..."  class="form-control"></textarea>
+      
+        <button type="submit" id="submit">Submit</button>
+
+
+    </form>
+
+  </body>
